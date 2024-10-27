@@ -1,8 +1,5 @@
 {
   "version": 2,
-  "env": {
-      "MONGODB_URI": "mongodb+srv://haonhat2729:dzBomTjrbrAPdgob@cluster0.siplk.mongodb.net/"
-  },
   "builds": [
       {
           "src": "src/main.ts",

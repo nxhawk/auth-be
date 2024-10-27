@@ -1,8 +1,8 @@
 import { Controller, Get, Inject, UseGuards } from '@nestjs/common';
-import { AccessTokenGuard } from 'src/common/guards/accessToken.guard';
-import { Routes, Services } from 'src/utils/constants';
-import { AuthUser } from 'src/utils/decorators';
-import { TokenData } from 'src/utils/types';
+import { AccessTokenGuard } from '../common/guards/accessToken.guard';
+import { Routes, Services } from '../utils/constants';
+import { AuthUser } from '../utils/decorators';
+import { TokenData } from '../utils/types';
 
 @Controller(Routes.USER)
 export class UserController {

@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { UserController } from './user.controller';
 import { UserService } from './user.service';
-import { Services } from 'src/utils/constants';
+import { Services } from '../utils/constants';
 import { MongooseModule } from '@nestjs/mongoose';
 import { User, UserSchema } from './schemas/user.schema';
 import { AccessTokenStrategy } from './strategies/accessToken.strategy';
