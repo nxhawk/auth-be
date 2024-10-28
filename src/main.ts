@@ -6,8 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.setGlobalPrefix('api');
   app.enableCors({
-    origin: true,
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+    origin: ['http://localhost:5173', 'https://nxhawk.github.io/auth-fe'],
     credentials: true,
   });
   app.useGlobalPipes(new ValidationPipe());
