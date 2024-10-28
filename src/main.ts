@@ -8,7 +8,7 @@ async function bootstrap() {
     origin: [
       'http://localhost:3000',
       'http://localhost:5173',
-      'https://nxhawk.github.io/auth-fe',
+      'https://nxhawk.github.io',
     ],
     credentials: true,
   });
