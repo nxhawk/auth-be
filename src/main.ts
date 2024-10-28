@@ -7,7 +7,7 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'http://localhost:3000',
-      'https://localhost:5173',
+      'http://localhost:5173',
       'https://nxhawk.github.io/auth-fe',
     ],
     credentials: true,
