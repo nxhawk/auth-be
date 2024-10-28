@@ -6,7 +6,7 @@ import { RefreshTokenGuard } from '../common/guards/refreshToken.guard';
 import { AuthUser } from '../utils/decorators';
 import { TokenData } from '../utils/types';
 
-@Controller(Routes.AUTH)
+@Controller(Routes.USER)
 export class AuthController {
   constructor(@Inject(Services.USERS) private readonly userService) {}
 
