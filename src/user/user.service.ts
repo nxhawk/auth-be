@@ -107,6 +107,8 @@ export class UserService {
     return {
       accessToken,
       refreshToken,
+      email,
+      name,
     };
   }
 
@@ -130,5 +132,9 @@ export class UserService {
 
   async findById(id: string) {
     return this.userModel.findById(id);
+  }
+
+  async logoutUser(id: string) {
+    await this.userModel.updateOne({ id }, { $set: { refreshToken: null } });
   }
 }
